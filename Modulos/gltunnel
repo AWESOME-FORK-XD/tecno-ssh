@@ -21,7 +21,7 @@
             initcheck
             ;;
 	                3 | 03)
-			bash <(curl -sL https://raw.githubusercontent.com/kauavpnlite/CheckUser/main/install.sh)
+			bash <(curl -sL https://raw.githubusercontent.com/Rafa4g/CheckUser/main/install.sh)
 			;;          
 			0 | 00)
 			clear
