@@ -228,7 +228,7 @@ swap1=$(printf '%-5s' "$(free -h | grep -i swap | awk {'print $2'})")
 swap2=$(printf '%-5s' "$(free -h | grep -i swap | awk {'print $4'})")
 swap3=$(printf '%-5s' "$(free -h | grep -i swap | awk {'print $3'})")
 clear
-echo -e "\033[5;1;30;43m       
+echo -e "\033      
   _                          ____ ____  _   _ 
  | |_ ___  ___ _ __   ___   / ___/ ___|| | | |
  | __/ _ \/ __| '_ \ / _ \  \___ \___ \| |_| |
@@ -358,7 +358,7 @@ swap1=$(printf '%-5s' "$(free -h | grep -i swap | awk {'print $2'})")
 swap2=$(printf '%-5s' "$(free -h | grep -i swap | awk {'print $4'})")
 swap3=$(printf '%-5s' "$(free -h | grep -i swap | awk {'print $3'})")
 clear
-echo -e "\033[5;1;30;43m       
+echo -e "\033       
   _                          ____ ____  _   _ 
  | |_ ___  ___ _ __   ___   / ___/ ___|| | | |
  | __/ _ \/ __| '_ \ / _ \  \___ \___ \| |_| |
