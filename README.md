@@ -27,7 +27,7 @@ Só joga na máquina e deixar instalar
 # tecno PRO
 
 ```
-apt install wget -y; bash <(wget -qO- raw.githubusercontent.com/Rafa4g/plus-main/main/ssh-plus)
+apt install wget -y; bash <(wget -qO- raw.githubusercontent.com/Rafa4g/tecno-ssh/main/ssh-plus)
 ```
 
 # Acessa Root
