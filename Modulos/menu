@@ -284,9 +284,7 @@ case "$x" in
    ;;
    25)
    blockt
-   ;;
-   26)
-   botssh
+
    ;;
    27)
    inst-botteste
@@ -502,6 +500,13 @@ case "$x" in
    ;;
    v | V)
    bash <(curl -s -L https://raw.githubusercontent.com/srSPEEDiness/V2SPEED/main/install.sh)
+   ;;
+
+
+   26)
+
+   botssh
+
    ;;
    *)
    echo -e "\n\033[1;31mOpcao invalida !\033[0m"
