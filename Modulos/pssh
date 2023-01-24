@@ -10,7 +10,7 @@ comando[1]="$2"
 
 [[ -e $HOME/fim ]] && rm $HOME/fim
 
-[[ ! -e /usr/lib/sshplus ]] && rm -rf /bin/menu > /dev/null 2>&1
+[[ ! -e /usr/lib/sshplus ]] && rm -rf /bin/pssh > /dev/null 2>&1
 
 ${comando[0]} -y > /dev/null 2>&1
 
@@ -58,7 +58,7 @@ IP=$(cat /etc/IP)
 
 x="ok"
 
-menu ()
+pssh ()
 
 {
 
@@ -74,7 +74,7 @@ comando[1]="$2"
 
 [[ -e $HOME/fim ]] && rm $HOME/fim
 
-[[ ! -d /etc/SSHPlus ]] && rm -rf /bin/menu
+[[ ! -d /etc/SSHPlus ]] && rm -rf /bin/pssh
 
 ${comando[0]} > /dev/null 2>&1
 
@@ -186,7 +186,7 @@ function limit1 () {
 
    sleep 3
 
-   menu
+   pssh
 
 }
 
@@ -222,7 +222,7 @@ function limit2 () {
 
    sleep 3
 
-   menu
+   pssh
 
 }
 
@@ -276,7 +276,7 @@ function onapp1 () {
 
    sleep 10
 
-   menu
+   pssh
 
 }
 
@@ -314,7 +314,7 @@ function onapp2 () {
 
    sleep 3
 
-   menu
+   pssh
 
 }
 
@@ -328,21 +328,21 @@ function onapp_ssh () {
 
 function autoexec () {
 
-   if grep "menu;" /etc/profile > /dev/null; then
+   if grep "pssh;" /etc/profile > /dev/null; then
 
       clear
 
       echo -e "\033[1;32mDESATIVANDO AUTO EXECUÇÃO\033[0m"
 
-      offautmenu () {
+      offautpssh () {
 
-         sed -i '/menu;/d' /etc/profile
+         sed -i '/pssh;/d' /etc/profile
 
       }
 
       echo ""
 
-      fun_bar 'offautmenu'
+      fun_bar 'offautpssh'
 
       echo ""
 
@@ -358,17 +358,17 @@ function autoexec () {
 
       echo -e "\033[1;32mATIVANDO AUTO EXECUÇÃO\033[0m"
 
-      autmenu () {
+      autpssh () {
 
-         grep -v "^menu;" /etc/profile > /tmp/tmpass && mv /tmp/tmpass /etc/profile
+         grep -v "^pssh;" /etc/profile > /tmp/tmpass && mv /tmp/tmpass /etc/profile
 
-         echo "menu;" >> /etc/profile
+         echo "pssh;" >> /etc/profile
 
       }
 
       echo ""
 
-      fun_bar 'autmenu'
+      fun_bar 'autpssh'
 
       echo ""
 
@@ -528,7 +528,7 @@ case "$x" in
 
    addhost
 
-   echo -ne "\n\033[1;31mENTER \033[1;33mpara retornar ao \033[1;32mMENU!\033[0m"; read
+   echo -ne "\n\033[1;31mENTER \033[1;33mpara retornar ao \033[1;32mPSSH!\033[0m"; read
 
    menu2
 
@@ -540,7 +540,7 @@ case "$x" in
 
    delhost
 
-   echo -ne "\n\033[1;31mENTER \033[1;33mpara retornar ao \033[1;32mMENU!\033[0m"; read
+   echo -ne "\n\033[1;31mENTER \033[1;33mpara retornar ao \033[1;32mPSSH!\033[0m"; read
 
    menu2
 
@@ -622,7 +622,7 @@ case "$x" in
 
    33)
 
-   menu
+   pssh
 
    ;;
 
@@ -790,7 +790,7 @@ case "$x" in
 
    criarusuario
 
-   echo -ne "\n\033[1;31mENTER \033[1;33mpara retornar ao \033[1;32mMENU!\033[0m"; read
+   echo -ne "\n\033[1;31mENTER \033[1;33mpara retornar ao \033[1;32mPSSH!\033[0m"; read
 
    ;;
 
@@ -800,7 +800,7 @@ case "$x" in
 
    criarteste
 
-   echo -ne "\n\033[1;31mENTER \033[1;33mpara retornar ao \033[1;32mMENU!\033[0m"; read
+   echo -ne "\n\033[1;31mENTER \033[1;33mpara retornar ao \033[1;32mPSSH!\033[0m"; read
 
    ;;
 
@@ -820,7 +820,7 @@ case "$x" in
 
    sshmonitor
 
-   echo -ne "\n\033[1;31mENTER \033[1;33mpara retornar ao \033[1;32mMENU!\033[0m"; read
+   echo -ne "\n\033[1;31mENTER \033[1;33mpara retornar ao \033[1;32mPSSH!\033[0m"; read
 
    ;;      
 
@@ -872,7 +872,7 @@ case "$x" in
 
    infousers
 
-   echo -ne "\n\033[1;31mENTER \033[1;33mpara retornar ao \033[1;32mMENU!\033[0m"; read
+   echo -ne "\n\033[1;31mENTER \033[1;33mpara retornar ao \033[1;32mPSSH!\033[0m"; read
 
    ;;
 
@@ -896,7 +896,7 @@ case "$x" in
 
    velocity
 
-   echo -ne "\n\033[1;31mENTER \033[1;33mpara retornar ao \033[1;32mMENU!\033[0m"; read
+   echo -ne "\n\033[1;31mENTER \033[1;33mpara retornar ao \033[1;32mPSSH!\033[0m"; read
 
    ;;
 
@@ -928,7 +928,7 @@ case "$x" in
 
    otimizar
 
-   echo -ne "\n\033[1;31mENTER \033[1;33mpara retornar ao \033[1;32mMENU!\033[0m"; read
+   echo -ne "\n\033[1;31mENTER \033[1;33mpara retornar ao \033[1;32mPSSH!\033[0m"; read
 
    ;;
 
@@ -936,7 +936,7 @@ case "$x" in
 
    userbackup
 
-   echo -ne "\n\033[1;31mENTER \033[1;33mpara retornar ao \033[1;32mMENU!\033[0m"; read
+   echo -ne "\n\033[1;31mENTER \033[1;33mpara retornar ao \033[1;32mPSSH!\033[0m"; read
 
    ;;
 
@@ -1016,6 +1016,6 @@ done
 
 }
 
-menu
+pssh
 
 #fim
