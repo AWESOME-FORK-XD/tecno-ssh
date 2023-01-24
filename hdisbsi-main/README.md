@@ -1,26 +1,30 @@
-# BEM VINDO 🖕
+# BEM VINDO 👍
 
-# SPEEDSSH-PR0
+# SSH-PLUS
 
-# @srSPEEDiness
+# gugajs
 
 *PROJETO EM ANDAMENTO...
 
 
 # Modo de instalação
 # 👇👽👍
-Só joga na máquina e deixar instalar
 
-• atualiza sistema
-
-• desativa Ipv6
-
+• Primeiro coloque esse comando para atualizar sua maquina
+```
+apt-get update -y; apt-get upgrade -y; 
+```
 • instala recursos e o script
+```
+apt install wget -y; bash <(wget -qO- raw.githubusercontent.com/gugajs/SSHPLUS/main/ssh-plus)
 
 ```
-apt-get update -y; apt-get upgrade -y; wget install.speedcell.ga/Pro-ssh; chmod 777 Pro-ssh; ./Pro-ssh
 
+# 👇SENHA ROOT👇
+
+# ALTERE E DEFINA SUA NOVA SENHA ROOT 
+
+sudo -i
 ```
-
-
-
+bash <(wget -qO- raw.githubusercontent.com/gugajs/SSHPLUS/main/senharoot.sh)
+```
