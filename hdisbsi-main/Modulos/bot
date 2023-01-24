@@ -2,10 +2,10 @@
 #===================================================
 #   SCRIPT: BOT SSHPLUS MANAGER
 #   DATA ATT: 02 de Jun 2022
-#   DESENVOLVIDO POR: srSPEEDiness
+#   DESENVOLVIDO POR: RECPROJECTS
 #   API SHELLBOT: SHAMAN
-#   CONTATO TELEGRAM: http://t.me/srSPEEDiness
-#   CANAL TELEGRAM: http://t.me/srSPEEDiness
+#   CONTATO TELEGRAM: http://t.me/RECPROJECTS
+#   CANAL TELEGRAM: http://t.me/RECPROJECTS
 #===================================================
 [[ ! -d /etc/SSHPlus ]] && exit 0
 [[ ! -d /etc/bot ]] && exit 0
