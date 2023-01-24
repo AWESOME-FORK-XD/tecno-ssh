@@ -1,14 +1,13 @@
-# BEM VINDO 👍
+# BEM VINDO 
 
-# SSH-PLUS
+# TECNO-PRO
 
-# gugajs
+# JHONA
 
 *PROJETO EM ANDAMENTO...
 
 
 # Modo de instalação
-# 👇👽👍
 
 • Primeiro coloque esse comando para atualizar sua maquina
 ```
