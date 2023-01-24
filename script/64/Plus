@@ -221,7 +221,7 @@ chmod 777 checkuser.py > /dev/null 2>&1
     echo 'echo -e " DATA : $DATE"' >>/root/.bashrc
     echo 'echo -e " HORA : $TIME"' >>/root/.bashrc
     echo 'echo -e "@jhona70"' >>.bashrc
-    echo 'echo -e "\033[1;31m DIGITE ( menu ) PARA ENTRAR\033[0m."' >>/root/.bashrc
+    echo 'echo -e "\033[1;31m DIGITE ( pssh ) PARA ENTRAR\033[0m."' >>/root/.bashrc
     echo 'echo -e ""' >>/root/.bashrc
     date=$(date '+%Y-%m-%d <> %H:%M:%S')
     echo -e "\033[1;37m $system                          $date"
